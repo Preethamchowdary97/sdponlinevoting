@@ -1,0 +1,129 @@
+/* UserVoting.css */ 
+ 
+.user-voting-container { 
+    text-align: center; 
+    margin: 20px; 
+    color: #fff; /* Set text color to white for better visibility on a dark background */ 
+    background-color: #333; /* Dark background color */ 
+    padding: 20px; /* Add padding for better readability */ 
+} 
+ 
+.voting-title { 
+    font-size: 24px; 
+    font-weight: bold; /* Ensure a bold title for better visibility */ 
+} 
+ 
+.voting-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+} 
+ 
+.voting-table th, .voting-table td { 
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+} 
+ 
+.voting-table tr:nth-child(even) { 
+    background-color: #2c2c2c; /* Darker background for even rows */ 
+} 
+ 
+.member-image { 
+    width: 50px; 
+    height: 50px; 
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+} 
+ 
+.checkbox-label { 
+    position: relative; 
+    display: block; 
+    padding-left: 35px; 
+    margin-bottom: 12px; 
+    cursor: pointer; 
+    font-size: 16px; 
+} 
+ 
+.checkbox-custom { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 30px; 
+    width: 30px; 
+    background-color: #fff; 
+    border: 2px solid #007BFF; 
+    border-radius: 3px; 
+} 
+ 
+.checkbox-custom::after { 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+} 
+ 
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after { 
+    display: block; 
+    width: 15px; 
+    height: 15px; 
+    top: 7px; 
+    left: 7px; 
+    background-color: #007BFF; 
+    border-radius: 2px; 
+} 
+ 
+.checkbox { 
+    transform: scale(6); 
+} 
+ 
+.vote-button { 
+    display: inline-block; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    background-color: #007BFF; 
+    color: #fff; 
+    border: 2px solid #007BFF; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+} 
+ 
+.vote-button:hover { 
+    background-color: #0056b3; 
+    border-color: #0056b3; 
+    color: #fff; 
+} 
+ 
+.vote-button-container { 
+    text-align: center; 
+} 
+ 
+.success-message { 
+    font-size: 48px; 
+    font-weight: bold; 
+    line-height: 58px; 
+    margin-top: 30px; 
+    text-align: center; 
+    padding-top: 20px; 
+    color: #e6301c; 
+} 
+ 
+.than1 { 
+    text-align: center; 
+} 
+ 
+.thank { 
+    width: 600px; 
+    height: 300px; 
+} 
+ 
+/* Add this to your CSS file */ 
+.table-header-large { 
+    font-size: 18px; 
+} 
+ 
+.table-data-large { 
+    font-size: 16px;
+}

@@ -1,0 +1,46 @@
+/* Target the entire app element */
+.App {
+  text-align: center;  /* Center the content horizontally */
+  font-family: Arial, sans-serif;  /* Set the font family */
+  transition: background-color 0.5s ease;  /* Add a transition effect when the background color changes */
+}
+
+/* Target the logo element with class App-logo */
+.App-logo {
+  height: 40vmin;  /* Set the height of the logo to 40% of the viewport height */
+  pointer-events: none;  /* Prevent user interactions with the logo */
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));  /* Add a drop shadow effect to the logo */
+}
+
+/* Apply animation to the logo only when motion preference is not set to 'no-preference' */
+@media (prefers-reduced-motion: reduce) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Target the header element with class App-header */
+.App-header {
+  background-color: #282c34;  /* Set the background color of the header */
+  min-height: 100vh;  /* Ensure the header fills the entire viewport height */
+  display: flex;  /* Use flexbox for layout */
+  flex-direction: column;  /* Stack content vertically within the header */
+  align-items: center;  /* Center content horizontally within the header */
+  justify-content: center;  /* Center content vertically within the header */
+  font-size: calc(10px + 2vmin);  /* Set the font size based on viewport size */
+  color: white;  /* Set the text color to white */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  /* Add a box shadow to the header */
+}
+
+/* Target the link element with class App-link */
+.App-link {
+  color: #61dafb;  /* Set the link color */
+  text-decoration: none;  /* Remove the underline from the link */
+  transition: color 0.5s ease;  /* Add a transition effect when the link color changes */
+}
+
+/* Define the animation for the logo spin */
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }  /* Start the animation from 0 degrees rotation */
+  to { transform: rotate(360deg); }  /* End the animation at 360 degrees rotation, completing a full circle */
+}
